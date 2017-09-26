@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="~/Content/signin.css" rel="stylesheet">
+    <script type="text/javascript" src="~/Scripts/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="~/Content/scr.js"></script>
+    <title>@ViewBag.Title - Healthy Finances</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-inverse bg-dark">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Healthy Finances", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Home")">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("About", "Home")">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Contact", "Home")">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("SignIn", "Home")">System</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+
+        <ul class="nav nav-pills nav-fill bg-inverse text-danger">
+            <li class="nav-item" id="aboutNav">
+                <a href="@Url.Action("System", "Infos")">System</a>
+            </li>
+            <li class="nav-item" id="aboutNav">
+                <a href="@Url.Action("Finances", "Infos")">Finances</a>
+            </li>
+            <li class="nav-item" id="aboutNav">
+                <a href="@Url.Action("News", "Infos")">News</a>
+            </li>
+            <li class="nav-item" id="aboutNav">
+                <a href="@Url.Action("Tips", "Infos")">Tips</a>
+            </li>
+        </ul>
+        @RenderBody()
+        <hr />
+        <footer style="display:none;">
+            <p>&copy; @DateTime.Now.Year - Healthy Finances</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

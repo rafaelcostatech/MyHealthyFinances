@@ -197,6 +197,7 @@
     <Compile Include="Controllers\GroupsController.cs" />
     <Compile Include="Controllers\GroupTypesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InfosController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MovementsController.cs" />
     <Compile Include="Global.asax.cs">
@@ -369,6 +370,11 @@
     <Content Include="Views\Movements\Details.cshtml" />
     <Content Include="Views\Movements\Edit.cshtml" />
     <Content Include="Views\Movements\Index.cshtml" />
+    <Content Include="Views\Shared\About_Layout.cshtml" />
+    <Content Include="Views\Infos\Finances.cshtml" />
+    <Content Include="Views\Infos\News.cshtml" />
+    <Content Include="Views\Infos\System.cshtml" />
+    <Content Include="Views\Infos\Tips.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
