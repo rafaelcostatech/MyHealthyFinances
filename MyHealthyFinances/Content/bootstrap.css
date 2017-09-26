@@ -4239,7 +4239,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-nav {
-  margin: 7.5px -15px;
+  margin: 7.5px -7px;
 }
 
 .navbar-nav > li > a {
@@ -6814,3 +6814,18 @@ td.visible-print {
     display: none !important;
   }
 }
+
+#aboutNav > a {
+    color: white;
+    background-color: #428bca;
+    border-radius: 30px;
+
+}
+
+    #aboutNav > a:hover {
+        color: #428bca;
+        background-color: white;
+        -webkit-transition: background-color 1s, color 1s;
+        transition: background-color 1s, color 1s;
+
+    }
