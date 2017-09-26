@@ -1,0 +1,57 @@
+﻿@model IEnumerable<MyHealthyFinances.Models.Movement>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MovDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MovValue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MovDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BankAccount.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Group.Description)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MovDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MovValue)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MovDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BankAccount.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Group.Description)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MovementId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MovementId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MovementId })
+        </td>
+    </tr>
+}
+
+</table>

@@ -17,7 +17,7 @@ namespace MyHealthyFinances.Models
     public partial class HealthyFinancesDataEntities : DbContext
     {
         public HealthyFinancesDataEntities()
-            : base("name=HealthyFinancesDataEntities")
+            : base("name=HealthyFinancesDataEntities2")
         {
         }
     

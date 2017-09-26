@@ -191,8 +191,14 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BankAccountsController.cs" />
+    <Compile Include="Controllers\BankAccountTypesController.cs" />
+    <Compile Include="Controllers\BudgetsController.cs" />
+    <Compile Include="Controllers\GroupsController.cs" />
+    <Compile Include="Controllers\GroupTypesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MovementsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -321,6 +327,36 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\BankAccounts\Create.cshtml" />
+    <Content Include="Views\BankAccounts\Delete.cshtml" />
+    <Content Include="Views\BankAccounts\Details.cshtml" />
+    <Content Include="Views\BankAccounts\Edit.cshtml" />
+    <Content Include="Views\BankAccounts\Index.cshtml" />
+    <Content Include="Views\BankAccountTypes\Create.cshtml" />
+    <Content Include="Views\BankAccountTypes\Delete.cshtml" />
+    <Content Include="Views\BankAccountTypes\Details.cshtml" />
+    <Content Include="Views\BankAccountTypes\Edit.cshtml" />
+    <Content Include="Views\BankAccountTypes\Index.cshtml" />
+    <Content Include="Views\Budgets\Create.cshtml" />
+    <Content Include="Views\Budgets\Delete.cshtml" />
+    <Content Include="Views\Budgets\Details.cshtml" />
+    <Content Include="Views\Budgets\Edit.cshtml" />
+    <Content Include="Views\Budgets\Index.cshtml" />
+    <Content Include="Views\Groups\Create.cshtml" />
+    <Content Include="Views\Groups\Delete.cshtml" />
+    <Content Include="Views\Groups\Details.cshtml" />
+    <Content Include="Views\Groups\Edit.cshtml" />
+    <Content Include="Views\Groups\Index.cshtml" />
+    <Content Include="Views\GroupTypes\Create.cshtml" />
+    <Content Include="Views\GroupTypes\Delete.cshtml" />
+    <Content Include="Views\GroupTypes\Details.cshtml" />
+    <Content Include="Views\GroupTypes\Edit.cshtml" />
+    <Content Include="Views\GroupTypes\Index.cshtml" />
+    <Content Include="Views\Movements\Create.cshtml" />
+    <Content Include="Views\Movements\Delete.cshtml" />
+    <Content Include="Views\Movements\Details.cshtml" />
+    <Content Include="Views\Movements\Edit.cshtml" />
+    <Content Include="Views\Movements\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

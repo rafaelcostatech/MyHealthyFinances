@@ -1,0 +1,51 @@
+﻿@model IEnumerable<MyHealthyFinances.Models.BankAccount>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Start_Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Balance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BankAccountType.Desc)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Start_Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Balance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BankAccountType.Desc)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.AccountId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.AccountId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.AccountId })
+        </td>
+    </tr>
+}
+
+</table>
