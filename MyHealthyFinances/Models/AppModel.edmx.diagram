@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="50ece791d2ce4ee88196ed5ada74edd6" Name="Diagram1">
+        <EntityTypeShape EntityType="HealthyFinancesDataModel.AspNetRole" Width="1.5" PointX="8.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HealthyFinancesDataModel.AspNetUserClaim" Width="1.5" PointX="13.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="HealthyFinancesDataModel.AspNetUserLogin" Width="1.5" PointX="13.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HealthyFinancesDataModel.AspNetUser" Width="1.5" PointX="11" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HealthyFinancesDataModel.BankAccount" Width="1.5" PointX="6" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HealthyFinancesDataModel.BankAccountType" Width="1.5" PointX="3.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="HealthyFinancesDataModel.Budget" Width="1.5" PointX="5.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HealthyFinancesDataModel.Group" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HealthyFinancesDataModel.GroupType" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="HealthyFinancesDataModel.Movement" Width="1.5" PointX="8.25" PointY="2.5" IsExpanded="true" />
+        <AssociationConnector Association="HealthyFinancesDataModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="HealthyFinancesDataModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="HealthyFinancesDataModel.FK__Accounts__Type__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="HealthyFinancesDataModel.FK__Movements__Accou__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="HealthyFinancesDataModel.FK__Budgets__GroupId__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="HealthyFinancesDataModel.FK__Groups__Type__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="HealthyFinancesDataModel.FK__Movements__Group__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="HealthyFinancesDataModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
