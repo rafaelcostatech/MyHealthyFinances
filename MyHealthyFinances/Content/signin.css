@@ -1,5 +1,5 @@
 ﻿.form-signin {
-    max-width: 330px;
+    max-width: 530px;
     padding: 15px;
     margin: 0 auto;
 }
@@ -20,6 +20,7 @@
         box-sizing: border-box;
         padding: 10px;
         font-size: 16px;
+        max-width: inherit;
     }
 
         .form-signin .form-control:focus {
@@ -32,9 +33,20 @@
         border-bottom-left-radius: 0;
     }
 
-    .form-signin input[type="password"] {
-        margin-bottom: 10px;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-    }body {
+    .logInBtn {
+        max-width: 70%;
+        text-align: center;
+        margin: auto;
+    }
+
+.socialLogin {
+    max-width: 70%;
+    margin: auto;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}body {
 }
